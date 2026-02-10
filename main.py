@@ -45,7 +45,7 @@ def known_word():
     SCORE += 1
     to_learn.remove(current_card)
     new_data = pandas.DataFrame(to_learn)
-    new_data.to_csv("csv files/Words_to_learn.csv")
+    new_data.to_csv("csv files/Words_to_learn.csv", index=False)
     update_score()
     next_italian_card()
 
